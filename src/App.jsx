@@ -8,12 +8,14 @@ import Offers from './pages/Offers'
 import Signin from './pages/Signin'
 import Signup from './pages/Signup'
 import ForgotPassword from './pages/ForgotPassword'
+import Header from './components/Header'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
+      <Header/>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/profile" element={<Profile/>}></Route>
