@@ -30,7 +30,12 @@ const Profile = () => {
 
             <div className="flex justify-between whitespace-nowrap text-sm sm:text-lg">
               <p className='flex items-center '>Do you want to change your name?<span className='text-red-600 hover:text-red-700 transition ease-in-out duration-200 ml-1 cursor-pointer'>Edit</span></p>
-              <p onClick = {onLogout} className='text-blue-600'>Sign Out</p>
+              <p
+                onClick={onLogout}
+                className="text-blue-600 hover:text-blue-800 transition duration-200 ease-in-out cursor-pointer"
+              >
+                Sign out
+              </p>
             </div>
           </form>
         </div>
