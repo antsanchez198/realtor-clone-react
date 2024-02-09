@@ -3,16 +3,9 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import { db } from '../firebase';
 import Spinner from '../components/Spinner';
-// import {Swiper, SwiperSlide, useSwiper} from 'swiper/react'
-// import {Navigation, Pagination, Autoplay, EffectFade} from "swiper/modules"
-// import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-
-// import required modules
 import { EffectFade, Navigation, Autoplay, Pagination } from 'swiper/modules';
 import { FaShare, FaMapMarkerAlt, FaBed, FaBath, FaParking, FaChair } from 'react-icons/fa'
 import { getAuth } from 'firebase/auth'
@@ -69,9 +62,6 @@ const Listing = () => {
                             }}>
 
                         </div>
-                        {/* <div className='relative w-full overflow-hidden h-[300px]'>
-                            <img src={`${listing.imgUrls[index]}`} className='w-full bg-cover bg-no-repeat bg-center' />
-                        </div> */}
                     </SwiperSlide>
                 )}
             </Swiper>
